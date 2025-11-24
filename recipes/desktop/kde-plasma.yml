@@ -3,9 +3,6 @@ modules:
     group-remove:
       packages:
         - development-tools
-    remove:
-      packages:
-        - powerdevil
     install:
       install-weak-deps: false
       exclude:
