@@ -1,6 +1,6 @@
 name: main
 description: "My personal KDE image"
-base-image: hcr.io/ublue-os/base-main:41
+base-image: ghcr.io/ublue-os/base-main:latest
 image-version: latest
 
 modules:
