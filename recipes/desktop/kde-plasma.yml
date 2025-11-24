@@ -1,33 +1,34 @@
-type: dnf
-group-remove:
-  packages:
-    - development-tools
+modules:
+  - type: dnf
+    group-remove:
+      packages:
+        - development-tools
 
-install:
-  install-weak-deps: false
-  skip-unavailable: true
-  excludes:
-    - maliit-keyboard
-    - at-spi2-core
-    - at-spi2-atk
-  packages:
-    # Plasma
-    - plasma-desktop
-    - plasma-workspace
-    - plasma-workspace-wayland
-    - kwin
-    - kglobalacceld
-    - kscreenlocker
-    - kwallet
-    - breeze-icon-theme
-    - sddm
-    - sddm-breeze
+    install:
+      install-weak-deps: false
+      skip-unavailable: true
+      exclude:
+        - maliit-keyboard
+        - at-spi2-core
+        - at-spi2-atk
+      packages:
+        # Plasma
+        - plasma-desktop
+        - plasma-workspace
+        - plasma-workspace-wayland
+        - kwin
+        - kglobalacceld
+        - kscreenlocker
+        - kwallet
+        - breeze-icon-theme
+        - sddm
+        - sddm-breeze
 
-    # Portals
-    - xdg-desktop-portal
-    - xdg-desktop-portal-kde
+        # Portals
+        - xdg-desktop-portal
+        - xdg-desktop-portal-kde
 
-    # Apps
-    - dolphin
-    - konsole
-    - fastfetch
+        # Apps
+        - dolphin
+        - konsole
+        - fastfetch
