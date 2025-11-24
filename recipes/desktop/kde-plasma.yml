@@ -6,12 +6,11 @@ modules:
 
     install:
       install-weak-deps: false
-      remove:
-        packages:
-          - maliit-keyboard
-          - powerdevil
-          - upower
-          - cups
+      exclude:
+        - maliit-keyboard
+        - powerdevil
+        - upower
+        - cups
       packages:
         # Plasma
         - plasma-desktop
