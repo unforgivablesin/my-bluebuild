@@ -1,23 +1,33 @@
-modules:
-  - type: rpm-ostree
-    install:
-      # Plasma
-      - plasma-desktop
-      - plasma-workspace
-      - plasma-workspace-wayland
-      - kwin
-      - kglobalacceld
-      - kscreenlocker
-      - kactivitymanagerd
-      - kwallet
-      - breeze-icon-theme
-      - sddm
-      - sddm-breeze
+type: dnf
+group-remove:
+  packages:
+    - development-tools
 
-      # Portals
-      - xdg-desktop-portal
-      - xdg-desktop-portal-kde
+install:
+  install-weak-deps: false
+  skip-unavailable: true
+  excludes:
+    - maliit-keyboard
+    - at-spi2-core
+    - at-spi2-atk
+  packages:
+    # Plasma
+    - plasma-desktop
+    - plasma-workspace
+    - plasma-workspace-wayland
+    - kwin
+    - kglobalacceld
+    - kscreenlocker
+    - kwallet
+    - breeze-icon-theme
+    - sddm
+    - sddm-breeze
 
-      # Apps
-      - dolphin
-      - konsole
+    # Portals
+    - xdg-desktop-portal
+    - xdg-desktop-portal-kde
+
+    # Apps
+    - dolphin
+    - konsole
+    - fastfetch
