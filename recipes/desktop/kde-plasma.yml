@@ -1,14 +1,13 @@
 modules:
   - type: dnf
-    group-remove:
+    remove:
+      allow-erasing: true
       packages:
-        - development-tools
-    install:
-      install-weak-deps: false
-      exclude:
         - maliit-keyboard
         - upower
         - cups
+    install:
+      install-weak-deps: false
       packages:
         # Plasma
         - plasma-desktop
