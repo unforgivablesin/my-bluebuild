@@ -1,16 +1,15 @@
 - type: default-flatpaks
-  configurations:
-    - scope: user
-      repo:
-        title: Flathub (user)
-    - notify: true
-      scope: system
-      repo:
-        title: Flathub (system)
-      install:
-        - com.github.tchx84.Flatseal
-        - io.github.flattool.Warehouse
-        - io.missioncenter.MissionCenter
-        - com.github.rafostar.Clapper
-      remove:
-        - org.mozilla.firefox
+  notify: true
+  system:
+    repo-name: flathub
+    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    install:
+      - com.github.tchx84.Flatseal
+      - io.github.flattool.Warehouse
+      - io.missioncenter.MissionCenter
+      - com.github.rafostar.Clapper
+    remove:
+      - org.mozilla.firefox
+  user:
+    repo-name: flathub-user
+    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
