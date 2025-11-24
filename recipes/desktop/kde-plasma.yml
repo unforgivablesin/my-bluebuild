@@ -11,5 +11,3 @@ modules:
       # Basic KDE apps
       - dolphin
       - konsole
-      - gwenview
-      - spectacle

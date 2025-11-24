@@ -1,3 +1,16 @@
-type: flatpak
-remove:
-  - org.mozilla.firefox
+- type: default-flatpaks
+  configurations:
+    - scope: user
+      repo:
+        title: Flathub (user)
+    - notify: true
+      scope: system
+      repo:
+        title: Flathub (system)
+      install:
+        - com.github.tchx84.Flatseal
+        - io.github.flattool.Warehouse
+        - io.missioncenter.MissionCenter
+        - com.github.rafostar.Clapper
+      remove:
+        - org.mozilla.firefox
