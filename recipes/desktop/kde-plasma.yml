@@ -12,6 +12,7 @@ modules:
       - kwallet
       - breeze-icon-theme
       - sddm
+      - sddm-breeze
 
       # Portals
       - xdg-desktop-portal
@@ -19,3 +20,4 @@ modules:
 
       # Apps
       - dolphin
+      - konsole
