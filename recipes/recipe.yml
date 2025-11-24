@@ -1,7 +1,9 @@
 name: main
 description: "My personal KDE image"
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: hcr.io/ublue-os/base-main:41
 image-version: latest
 
 modules:
-  - from-file: common-packages.yml
+  - from-file: desktop/kde-plasma.yml
+  - from-file: packages/packages.yml
+  - from-file: packages/flatpak.yml
