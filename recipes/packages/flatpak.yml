@@ -1,15 +1,13 @@
-- type: default-flatpaks
-  notify: true
-  system:
-    repo-name: flathub
-    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-    install:
-      - com.github.tchx84.Flatseal
-      - io.github.flattool.Warehouse
-      - io.missioncenter.MissionCenter
-      - com.github.rafostar.Clapper
-    remove:
-      - org.mozilla.firefox
-  user:
-    repo-name: flathub-user
-    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: default-flatpaks
+notify: true
+system:
+  repo-name: flathub
+  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  install:
+    - com.github.tchx84.Flatseal
+    - io.github.flattool.Warehouse
+    - io.missioncenter.MissionCenter
+    - com.github.rafostar.Clapper
+  remove:
+    - org.mozilla.firefox
