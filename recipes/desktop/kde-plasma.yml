@@ -1,13 +1,21 @@
 modules:
   - type: rpm-ostree
     install:
-      # KDE Plasma
+      # Plasma
+      - plasma-desktop
       - plasma-workspace
-      - plasma-wayland-session
+      - plasma-workspace-wayland
+      - kwin
+      - kglobalacceld
+      - kscreenlocker
+      - kactivitymanagerd
+      - kwallet
+      - breeze-icon-theme
       - sddm
-      - sddm-breeze
-      - xorg-x11-server-Xwayland
 
-      # Basic KDE apps
+      # Portals
+      - xdg-desktop-portal
+      - xdg-desktop-portal-kde
+
+      # Apps
       - dolphin
-      - konsole
