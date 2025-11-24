@@ -1,0 +1,7 @@
+type: rpm-ostree
+install:
+  - chromium
+remove:
+  - firefox
+  - firefox-langpacks
+  - NetworkManager

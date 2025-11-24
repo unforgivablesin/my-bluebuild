@@ -1,0 +1,15 @@
+modules:
+  - type: rpm-ostree
+    install:
+      # KDE Plasma
+      - plasma-workspace
+      - plasma-wayland-session
+      - sddm
+      - sddm-breeze
+      - xorg-x11-server-Xwayland
+
+      # Basic KDE apps
+      - dolphin
+      - konsole
+      - gwenview
+      - spectacle
