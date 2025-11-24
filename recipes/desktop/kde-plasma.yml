@@ -6,11 +6,12 @@ modules:
 
     install:
       install-weak-deps: false
-      skip-unavailable: true
-      exclude:
-        - maliit-keyboard
-        - at-spi2-core
-        - at-spi2-atk
+      remove:
+        packages:
+          - maliit-keyboard
+          - powerdevil
+          - upower
+          - cups
       packages:
         # Plasma
         - plasma-desktop
