@@ -20,6 +20,7 @@ user:
     - gvfs-goa-volume-monitor.service
     - gvfs-metadata.service
     - colord
+    - switcheroo-control
 
     # GNOME services
     - org.gnome.SettingsDaemon.A11ySettings.service
