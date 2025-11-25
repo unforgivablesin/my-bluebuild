@@ -1,5 +1,13 @@
 modules:
   - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - gnome-shell
+        - gnome-console
+        - nautilus
+        - xdg-user-dirs
+        - xdg-user-dirs-gtk
     group-install:
       packages:
-        - gnome-desktop
+        - fonts
