@@ -4,6 +4,10 @@ system:
     - upower.service
 user:
   masked:
+    # Services
+    - at-spi-dbus-bus.service
+    - geoclue.service
+
     # Evolution
     - evolution-addressbook-factory.service
     - evolution-calendar-factory.service
@@ -13,7 +17,7 @@ user:
     # GVFS
     - gvfs-goa-volume-monitor.service
     - gvfs-metadata.service
-    - at-spi-dbus-bus.service
+    - colord
 
     # GNOME services
     - org.gnome.SettingsDaemon.A11ySettings.service
@@ -26,3 +30,4 @@ user:
     - org.gnome.SettingsDaemon.Keyboard.service
     - org.gnome.SettingsDaemon.Color.service
     - org.gnome.SettingsDaemon.Sharing.service
+    - org.gnome.SettingsDaemon.UsbProtection.service
