@@ -2,4 +2,4 @@ modules:
   - type: dnf
     group-install:
       packages:
-        - cosmic-desktop-environment
+        - gnome-desktop
