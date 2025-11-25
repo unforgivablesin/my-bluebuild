@@ -1,7 +1,8 @@
 modules:
   - type: dnf
     remove:
-      - cups
+      packages:
+        - cups
     install:
       install-weak-deps: false
       packages:
