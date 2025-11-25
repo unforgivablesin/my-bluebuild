@@ -2,6 +2,8 @@ modules:
   - type: dnf
     install:
       install-weak-deps: false
+      exclude:
+        - NetworkManager
       packages:
         - gnome-shell
         - gnome-console
