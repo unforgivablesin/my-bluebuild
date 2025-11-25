@@ -1,11 +1,12 @@
 modules:
   - type: dnf
-    remove:
-      packages:
-        - maliit-keyboard
-        - cups
     install:
+      skip-unavailable: true
+      skip-broken: true
       install-weak-deps: false
+      exclude:
+        - cups
+        - powerdevil
       packages:
         # Plasma
         - plasma-desktop
