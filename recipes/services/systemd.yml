@@ -2,6 +2,8 @@ type: systemd
 system:
   masked:
     - upower.service
+user:
+  masked:
     - evolution-addressbook-factory.service
     - evolution-calendar-factory.service
     - evolution-source-registry.service
