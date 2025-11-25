@@ -12,10 +12,11 @@ modules:
         - gnome-shell
         - gnome-console
         - nautilus
-        - xdg-user-dirs
-        - xdg-user-dirs-gtk
         - flatpak
         - systemd-networkd
+        - xdg-user-dirs
+        - xdg-user-dirs-gtk
+        - langpacks-en
 
         # Applications
         - htop
