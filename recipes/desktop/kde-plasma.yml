@@ -1,12 +1,9 @@
 modules:
   - type: dnf
+    remove:
+      - cups
     install:
-      skip-unavailable: true
-      skip-broken: true
       install-weak-deps: false
-      exclude:
-        - cups
-        - powerdevil
       packages:
         # Plasma
         - plasma-desktop
