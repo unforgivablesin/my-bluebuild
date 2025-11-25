@@ -4,15 +4,25 @@ system:
     - upower.service
 user:
   masked:
+    # Evolution
     - evolution-addressbook-factory.service
     - evolution-calendar-factory.service
     - evolution-source-registry.service
     - evolution-alarm-notify.service
+
+    # GVFS
     - gvfs-goa-volume-monitor.service
-    - tracker-store.service
+    - gvfs-metadata.service
     - at-spi-dbus-bus.service
+
+    # GNOME services
     - org.gnome.SettingsDaemon.A11ySettings.service
     - org.gnome.SettingsDaemon.Power.service
     - org.gnome.SettingsDaemon.Rfkill.service
     - org.gnome.SettingsDaemon.Smartcard.service
     - org.gnome.SettingsDaemon.Wwan.service
+    - org.gnome.SettingsDaemon.PrintNotifications.service
+    - org.gnome.SettingsDaemon.MediaKeys.service
+    - org.gnome.SettingsDaemon.Keyboard.service
+    - org.gnome.SettingsDaemon.Color.service
+    - org.gnome.SettingsDaemon.Sharing.service

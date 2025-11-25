@@ -1,16 +1,23 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 modules:
   - type: dnf
+    remove:
+      packages:
+        - NetworkManager
+        - bluez
     install:
       install-weak-deps: false
-      exclude:
-        - NetworkManager
       packages:
+        # GNOME packages
         - gnome-shell
         - gnome-console
         - nautilus
         - xdg-user-dirs
         - xdg-user-dirs-gtk
         - flatpak
+
+        # Applications
+        - chromium
     group-install:
       packages:
         - fonts

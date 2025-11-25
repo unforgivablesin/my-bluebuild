@@ -1,10 +1,17 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-stage-list-v1.json
 name: main
 description: "My personal KDE image"
 base-image: quay.io/fedora/fedora-bootc
 image-version: latest
 
 modules:
-  - from-file: desktop/gnome.yml
-  - from-file: packages/packages.yml
-  - from-file: packages/flatpak.yml
+  - type: files
+    files:
+      - source: system/usr
+        destination: /usr
+      - source: system/etc
+        destination: /etc
+
+  - from-file: desktop/common.yml
+  - from-file: desktop/flatpak.yml
   - from-file: services/systemd.yml
