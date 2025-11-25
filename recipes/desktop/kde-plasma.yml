@@ -1,28 +1,4 @@
 modules:
   - type: dnf
-    remove:
-      packages:
-        - cups
-    install:
-      install-weak-deps: false
-      packages:
-        # Plasma
-        - plasma-desktop
-        - plasma-workspace
-        - plasma-workspace-wayland
-        - kwin
-        - kglobalacceld
-        - kscreenlocker
-        - kwallet
-        - breeze-icon-theme
-        - sddm
-        - sddm-breeze
-
-        # Portals
-        - xdg-desktop-portal
-        - xdg-desktop-portal-kde
-
-        # Apps
-        - dolphin
-        - konsole
-        - fastfetch
+    group-install:
+      cosmic-desktop-environment
