@@ -1,5 +1,7 @@
 type: systemd
 system:
+  enabled:
+    - systemd-networkd.service
   masked:
     - upower.service
 user:

@@ -15,8 +15,10 @@ modules:
         - xdg-user-dirs
         - xdg-user-dirs-gtk
         - flatpak
+        - systemd-networkd
 
         # Applications
+        - htop
         - chromium
     group-install:
       packages:
