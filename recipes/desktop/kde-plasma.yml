@@ -8,6 +8,7 @@ modules:
         - nautilus
         - xdg-user-dirs
         - xdg-user-dirs-gtk
+        - flatpak
     group-install:
       packages:
         - fonts
