@@ -4,6 +4,7 @@ base-image: quay.io/fedora/fedora-bootc
 image-version: latest
 
 modules:
-  - from-file: desktop/kde-plasma.yml
+  - from-file: desktop/gnome.yml
   - from-file: packages/packages.yml
   - from-file: packages/flatpak.yml
+  - from-file: services/systemd.yml
