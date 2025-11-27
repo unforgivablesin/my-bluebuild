@@ -17,6 +17,7 @@ modules:
         - xdg-user-dirs
         - xdg-user-dirs-gtk
         - langpacks-en
+        - just
 
         # Applications
         - htop

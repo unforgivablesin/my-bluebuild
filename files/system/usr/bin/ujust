@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+/usr/bin/just --justfile /usr/share/scripts/just/00-entry.just "${@}"

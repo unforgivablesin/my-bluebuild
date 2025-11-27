@@ -12,6 +12,7 @@ modules:
       - source: system/etc
         destination: /etc
 
+  - from-file: common/security.yml
   - from-file: desktop/common.yml
   - from-file: desktop/flatpak.yml
   - from-file: services/systemd.yml
