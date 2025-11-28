@@ -10,7 +10,7 @@ modules:
       packages:
         # USBGuard
         - usbguard
-        - usbuard-notifier
+        - usbguard-notifier
         - usbguard-selinux
         - usbguard-dbus
     group-install:
