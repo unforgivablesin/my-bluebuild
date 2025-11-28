@@ -17,6 +17,7 @@ modules:
         - xdg-user-dirs
         - xdg-user-dirs-gtk
         - langpacks-en
+        - glibc-langpack-en
         - just
 
         # Applications
