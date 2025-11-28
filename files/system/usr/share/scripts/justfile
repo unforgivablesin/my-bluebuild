@@ -1,4 +1,8 @@
 set allow-duplicate-recipes := true
 set ignore-comments := true
 
+default:
+    #!/usr/bin/bash
+    echo "Main configuration scripts"
+
 import "/usr/share/scripts/just/security.just"
